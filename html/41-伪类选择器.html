@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之伪类选择器（重要）</title>
+    <style>
+        /* 1、未被访问的链接 */
+        a:link {
+            color: #999;
+            text-decoration: none;
+        }
+
+        /* 2、已访问的链接 */
+        a:visited {
+            color: lightseagreen;
+        }
+
+        /* 3、鼠标悬停的链接 */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* 4、鼠标点击的链接 */
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.baidu.com">百度搜索</a>
+    <a href="http://www.jd.com">京东商城</a>
+    <a href="http://www.taobao.com">淘宝商城</a>
+</body>
+
+</html>
