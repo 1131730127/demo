@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素模式转换</title>
+    <style>
+        a {
+            /* 把行内元素转换为块级元素 */
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            background-color: lightcoral;
+        }
+
+        div {
+            /* 将块级元素转换成行内元素 */
+            display: inline;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: lightgreen;
+        }
+
+        span {
+            /* 将行内元素转换成行内块元素 */
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">金星阿姨</a>
+    <div>我是块级元素</div>
+    <span>我是行内元素</span>
+</body>
+
+</html>
