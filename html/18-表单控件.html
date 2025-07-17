@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单控件</title>
+</head>
+
+<body>
+    <form action="#">
+        <!-- 文本输入框 -->
+        <label for="username">用户名：</label>
+        <input type="text" name="username" id="username" placeholder="请输入用户名"><br>
+        <!-- 密码输入框 -->
+        <label for="password">密码：</label>
+        <input type="password" name="password" id="password" maxlength="10" placeholder="请输入密码"><br>
+        <!-- 单选按钮 -->
+        性别：<input type="radio" name="sex" id="boy">
+        <label for="boy">
+            <img src="../img/man.jpg" alt=""> 男
+        </label>
+        <input type="radio" name="sex" id="girl">
+        <label for="girl">
+            <img src="../img/women.jpg" alt=""> 女
+        </label><br>
+        <!-- 复选按钮 -->
+        爱好：<input type="checkbox" name="hobby" id="running">
+        <label for="running">跑步</label>
+        <input type="checkbox" name="hobby" id="read">
+        <label for="read">阅读</label>
+        <input type="checkbox" name="hobby" id="play-backetball">
+        <label for="play-backetball">打篮球</label><br>
+        <!-- 邮件表单控件 -->
+        <label for="email">请输入邮件：</label>
+        <input type="email" name="email" id="email" placeholder="请输入邮件"><br>
+        <!-- 时间表单控件 -->
+        <label for="date">请选择时间日期：</label>
+        <input type="date" name="date" id="date"><br>
+        <!-- 时间戳表单控件 -->
+        <label for="datetime-local">请选择时间：</label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local"><br>
+        <!-- 颜色表单控件 -->
+        <label for="color">请选择颜色：</label>
+        <input type="color" name="color" id="color"><br>
+        <!-- 文件域表单控件 -->
+        <label for="file">请选择上传文件：</label>
+        <input type="file" name="file" id="file"><br>
+        <!-- 重置表单控件 -->
+        <input type="reset" value="重置数据">
+        <!-- 提交数据 -->
+        <input type="submit" value="提交数据">
+        <!-- 普通按钮 -->
+        <button>搜索</button><br>
+        <!-- 搜索表单控件 -->
+        <label for="search">请输入搜索内容：</label>
+        <input type="url" name="search" id="search" placeholder="请输入搜索内容"><br>
+        <!-- 范围表单控件 -->
+        <input type="range" min="10" max="100"><br>
+        <!-- 文本域标签 -->
+        <label for="introduce">自我介绍：</label>
+        <textarea name="user-introduce" id="introduce" cols="30" rows="10">、
+
+        </textarea><br>
+        <!-- 下拉菜单 -->
+        <select name="" id="">
+            <option value="">请选择出生城市</option>
+            <option value="">重庆</option>
+            <option selected value="">武汉</option>
+            <option value="">湖北</option>
+            <option value="">湖南</option>
+            <option value="">上海</option>
+        </select>
+    </form>
+</body>
+
+</html>
