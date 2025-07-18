@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+        /* 元素选择器的权重是0001 */
+        div {
+            color: skyblue;
+        }
+
+        /* 类选择器的权重是0010 */
+        .test {
+            color: red !important;
+        }
+
+        #demo {
+            color: lightgreen;
+        }
+
+        /* 优先级执行原则：
+        1、如果选择器相同，则执行层叠性
+        2、选择器不同，则根据选择器权重执行
+        */
+        /* 优先级执行权重如下：
+        1、继承或者* 0000
+        2、元素选择器 0001
+        3、类选择器、伪类选择器 0010
+        4、id选择器 0100
+        5、行内样式 1000
+        6、important 无穷大 */
+        /* 优先级注意点：
+        1、权重是有4组数字组合，但是永远不会有进位
+        2、可以理解为类选择器用于大于元素选择器，id选择器用于大于类选择器，以此类推
+        3、等级判断是从左到右，如果某一位数值，则判断下一位数值
+        4、继承的权重是0，如果该元素没有直接选中，不管父元素权重有多高，子元素得到的权重依然位是0（重要） */
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color: purple;">你笑起来真好看</div>
+</body>
+
+</html>
