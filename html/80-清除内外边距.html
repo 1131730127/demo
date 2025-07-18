@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除内外边距</title>
+    <style>
+        /* 清除内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 0 20px;
+        }
+
+        /* 注意：行内元素为了照顾兼容性，尽量只设置左右的内外边距，不要设置上下内外边边距。但是转换为行内块元素就可以了 */
+    </style>
+</head>
+
+<body>
+    <div>我是块级元素</div>
+    <span>行内元素尽量只设置左右的内外边距</span>
+</body>
+
+</html>
