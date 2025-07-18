@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外内边距合并-嵌套塌陷问题</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: lightblue;
+            /* 解决嵌套塌陷问题 */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+            margin-top: 50px;
+        }
+
+        /* 解决方案：
+        1、为父元素定义上边框
+        2、为父元素定义内边距
+        3、为父元素定义overflow: hidden; */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
